@@ -14,12 +14,23 @@ restaurant = random.choice(daytrip_resteraunts)
 transportation = random.choice(daytrip_transportation)
 entertainment = random.choice(daytrip_entertainment)
 
+
+
+destinations_2 = random.choice(daytrip_destinations)
+restaurant_2 = random.choice(daytrip_resteraunts)
+transportation_2 = random.choice(daytrip_transportation)
+entertainment_2 = random.choice(daytrip_entertainment)
+
+
 daytrip = (f"{destinations} {restaurant} {transportation} {entertainment}")
 
 print(daytrip)
 
 endtrip = input("Did you like your daytrip y/n ")
 
-new_daytrip =(f"{destinations} {restaurant} {transportation} {entertainment}")
+new_daytrip =(f"{destinations_2} {restaurant_2} {transportation_2} {entertainment_2}")
 while endtrip == "n":
     print(new_daytrip)
+    break
+else:
+    print("Have a fun trip!")
